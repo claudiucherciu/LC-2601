@@ -12,3 +12,4 @@ and time available via the CAN bus interface.
 
 ## Acknowledgements
 Supported by the ESOC Cybernetic Club.
+*SMA connector library from http://www.kicadlib.org/modules/sma_connectors.zip
