@@ -29,7 +29,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:cybclaud
-LIBS:sma
 LIBS:gps_can_v0.1-cache
 EELAYER 25 0
 EELAYER END
@@ -170,17 +169,6 @@ F 3 "" H 2000 2750 50  0000 C CNN
 	1    2000 2750
 	1    0    0    -1  
 $EndComp
-$Comp
-L R_Small R1
-U 1 1 57F90E3D
-P 2200 2000
-F 0 "R1" H 2230 2020 50  0000 L CNN
-F 1 "10k" H 2230 1960 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 2200 2000 50  0001 C CNN
-F 3 "" H 2200 2000 50  0000 C CNN
-	1    2200 2000
-	1    0    0    -1  
-$EndComp
 Text GLabel 10250 4050 2    60   Input ~ 0
 CAN1_H
 Text GLabel 10250 4250 2    60   Input ~ 0
@@ -213,7 +201,7 @@ F 3 "" H 9650 5000 50  0000 C CNN
 $EndComp
 Text HLabel 8800 5500 0    60   Input ~ 0
 CAN2_STBY
-Text HLabel 8800 3950 0    60   Input ~ 0
+Text HLabel 8850 3950 0    60   Input ~ 0
 CAN1_STBY
 $Comp
 L +5V #PWR08
@@ -403,12 +391,12 @@ $EndComp
 $Comp
 L +5V #PWR017
 U 1 1 57FACBDB
-P 8850 1500
-F 0 "#PWR017" H 8850 1350 50  0001 C CNN
-F 1 "+5V" H 8850 1640 50  0000 C CNN
-F 2 "" H 8850 1500 50  0000 C CNN
-F 3 "" H 8850 1500 50  0000 C CNN
-	1    8850 1500
+P 8600 1650
+F 0 "#PWR017" H 8600 1500 50  0001 C CNN
+F 1 "+5V" H 8600 1790 50  0000 C CNN
+F 2 "" H 8600 1650 50  0000 C CNN
+F 3 "" H 8600 1650 50  0000 C CNN
+	1    8600 1650
 	1    0    0    -1  
 $EndComp
 Text GLabel 5500 1000 0    60   Input ~ 0
@@ -556,8 +544,6 @@ Connection ~ 1400 4000
 Wire Wire Line
 	8900 5500 8800 5500
 Wire Wire Line
-	8850 3950 8800 3950
-Wire Wire Line
 	3800 4300 3700 4300
 Wire Wire Line
 	3700 4100 3800 4100
@@ -632,14 +618,6 @@ Wire Wire Line
 	6600 4450 7150 4450
 Wire Wire Line
 	6600 4800 7150 4800
-Wire Wire Line
-	2200 2100 2200 2200
-Wire Wire Line
-	2200 1900 2200 1750
-Wire Wire Line
-	2200 1750 3000 1750
-Wire Wire Line
-	2200 2200 2350 2200
 Wire Wire Line
 	2250 2750 2350 2750
 Wire Wire Line
@@ -733,15 +711,6 @@ Text HLabel 8000 2050 2    60   Input ~ 0
 5V_BUS
 Wire Wire Line
 	8000 2050 7800 2050
-Text HLabel 8000 2750 2    60   Input ~ 0
-S3
-Text HLabel 7100 2750 0    60   Input ~ 0
-S3
-Wire Wire Line
-	8000 2750 7800 2750
-Wire Wire Line
-	7100 2750 7300 2750
-Connection ~ 7950 2750
 Wire Wire Line
 	8600 2000 8600 2100
 Wire Wire Line
@@ -760,58 +729,8 @@ F 3 "" H 8600 1900 50  0000 C CNN
 	1    8600 1900
 	1    0    0    -1  
 $EndComp
-$Comp
-L R_Small R8
-U 1 1 57FC45B8
-P 8850 1900
-F 0 "R8" H 8880 1920 50  0000 L CNN
-F 1 "0" H 8880 1860 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 8850 1900 50  0001 C CNN
-F 3 "" H 8850 1900 50  0000 C CNN
-	1    8850 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L R_Small R9
-U 1 1 57FC4607
-P 9100 1900
-F 0 "R9" H 9130 1920 50  0000 L CNN
-F 1 "DNP" H 9130 1860 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 9100 1900 50  0001 C CNN
-F 3 "" H 9100 1900 50  0000 C CNN
-	1    9100 1900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7950 2800 8850 2800
-Wire Wire Line
-	8850 2800 8850 2000
-Wire Wire Line
-	7950 2750 7950 2800
 Wire Wire Line
 	8600 1800 8600 1650
-Wire Wire Line
-	8600 1650 9100 1650
-Wire Wire Line
-	8850 1500 8850 1800
-Wire Wire Line
-	9100 1650 9100 1800
-Connection ~ 8850 1650
-Text HLabel 8000 2850 2    60   Input ~ 0
-S4
-Wire Wire Line
-	7800 2850 8000 2850
-Wire Wire Line
-	7950 2850 7950 2900
-Wire Wire Line
-	7950 2900 9100 2900
-Wire Wire Line
-	9100 2900 9100 2000
-Connection ~ 7950 2850
-Text HLabel 7100 2850 0    60   Input ~ 0
-S4
-Wire Wire Line
-	7100 2850 7300 2850
 Wire Wire Line
 	5500 1000 5800 1000
 Wire Wire Line
@@ -869,57 +788,6 @@ Wire Wire Line
 Wire Wire Line
 	4850 6150 4000 6150
 Connection ~ 4000 6150
-Text HLabel 4000 6300 2    60   Input ~ 0
-GPS_RX
-Wire Wire Line
-	4000 6250 4000 6300
-Connection ~ 4000 6250
-Text HLabel 4400 2300 2    60   Input ~ 0
-GPS_RX
-$Comp
-L R_Small R3
-U 1 1 57FCD75E
-P 4250 2500
-F 0 "R3" H 4280 2520 50  0000 L CNN
-F 1 "10k" H 4280 2460 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 4250 2500 50  0001 C CNN
-F 3 "" H 4250 2500 50  0000 C CNN
-	1    4250 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L R_Small R4
-U 1 1 57FCD7D3
-P 4250 2800
-F 0 "R4" H 4280 2820 50  0000 L CNN
-F 1 "20k" H 4280 2760 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 4250 2800 50  0001 C CNN
-F 3 "" H 4250 2800 50  0000 C CNN
-	1    4250 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR022
-U 1 1 57FCD835
-P 4250 3000
-F 0 "#PWR022" H 4250 2750 50  0001 C CNN
-F 1 "GND" H 4250 2850 50  0000 C CNN
-F 2 "" H 4250 3000 50  0000 C CNN
-F 3 "" H 4250 3000 50  0000 C CNN
-	1    4250 3000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4250 2650 3450 2650
-Wire Wire Line
-	4250 2600 4250 2700
-Connection ~ 4250 2650
-Wire Wire Line
-	4250 3000 4250 2900
-Wire Wire Line
-	4250 2400 4250 2300
-Wire Wire Line
-	4250 2300 4400 2300
 Text HLabel 2150 650  2    60   Input ~ 0
 ~GPS_OC
 Wire Wire Line
@@ -932,4 +800,45 @@ Text HLabel 3900 5600 2    60   Input ~ 0
 ~GPS_OC
 Wire Wire Line
 	3700 5600 3900 5600
+NoConn ~ 2350 2200
+NoConn ~ 3450 2650
+NoConn ~ 3450 2200
+NoConn ~ 1500 4700
+NoConn ~ 3700 4700
+NoConn ~ 3700 4600
+NoConn ~ 3700 4500
+NoConn ~ 3700 4400
+NoConn ~ 3700 4000
+NoConn ~ 3700 6500
+NoConn ~ 3700 6400
+NoConn ~ 3700 6300
+NoConn ~ 3700 5800
+NoConn ~ 3700 5500
+NoConn ~ 3700 5400
+NoConn ~ 3700 5300
+NoConn ~ 3700 5000
+NoConn ~ 3700 4900
+NoConn ~ 3700 6800
+NoConn ~ 3700 6900
+NoConn ~ 7800 3350
+NoConn ~ 7800 3250
+NoConn ~ 7800 3150
+NoConn ~ 7800 3050
+NoConn ~ 7800 2950
+NoConn ~ 7800 2850
+NoConn ~ 7800 2750
+NoConn ~ 7800 2650
+NoConn ~ 7800 2550
+NoConn ~ 7800 2450
+NoConn ~ 7300 3350
+NoConn ~ 7300 3250
+NoConn ~ 7300 3150
+NoConn ~ 7300 3050
+NoConn ~ 7300 2950
+NoConn ~ 7300 2850
+NoConn ~ 7300 2750
+NoConn ~ 7300 2650
+NoConn ~ 7300 2550
+NoConn ~ 7300 2450
+NoConn ~ 7300 2350
 $EndSCHEMATC
