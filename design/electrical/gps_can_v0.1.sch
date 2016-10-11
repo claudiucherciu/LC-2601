@@ -30,6 +30,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:cybclaud
 LIBS:sma
+LIBS:gps_can_v0.1-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -919,4 +920,16 @@ Wire Wire Line
 	4250 2400 4250 2300
 Wire Wire Line
 	4250 2300 4400 2300
+Text HLabel 2150 650  2    60   Input ~ 0
+~GPS_OC
+Wire Wire Line
+	2050 950  2100 950 
+Wire Wire Line
+	2100 950  2100 650 
+Wire Wire Line
+	2100 650  2150 650 
+Text HLabel 3900 5600 2    60   Input ~ 0
+~GPS_OC
+Wire Wire Line
+	3700 5600 3900 5600
 $EndSCHEMATC
