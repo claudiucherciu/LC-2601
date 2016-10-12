@@ -1,4 +1,4 @@
-update=10/10/2016 23:10:49
+update=12/10/2016 09:25:19
 version=1
 last_client=kicad
 [pcbnew]
@@ -61,3 +61,13 @@ LibName29=valves
 LibName30=cybclaud
 LibName31=sma
 LibName32=Library/cybclaud
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
