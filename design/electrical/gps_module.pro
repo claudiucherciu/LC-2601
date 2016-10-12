@@ -1,4 +1,4 @@
-update=12/10/2016 09:25:19
+update=12/10/2016 10:05:45
 version=1
 last_client=kicad
 [pcbnew]
@@ -20,14 +20,12 @@ SolderMaskMinWidth=0.000000000000
 DrawSegmentWidth=0.200000000000
 BoardOutlineThickness=0.100000000000
 ModuleOutlineThickness=0.150000000000
-[general]
-version=1
 [cvpcb]
 version=1
 NetIExt=net
 [eeschema]
 version=1
-LibDir=Library
+LibDir=library
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -58,16 +56,7 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=cybclaud
-LibName31=sma
-LibName32=Library/cybclaud
-[schematic_editor]
+LibName30=sma
+LibName31=library/mylib
+[general]
 version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60

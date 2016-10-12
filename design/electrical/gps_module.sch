@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:cybclaud
+LIBS:sma
 LIBS:gps_can_v0.1-cache
 EELAYER 25 0
 EELAYER END
@@ -195,13 +196,6 @@ F 3 "" H 9650 5000 50  0000 C CNN
 	1    9650 5000
 	1    0    0    -1  
 $EndComp
-<<<<<<< HEAD
-Text HLabel 8800 5500 0    60   Input ~ 0
-CAN2_STBY
-Text HLabel 8850 3950 0    60   Input ~ 0
-CAN1_STBY
-=======
->>>>>>> 4fe7c757d292dbbe3f96a6210116ac8b44c934d3
 $Comp
 L +5V #PWR08
 U 1 1 57F94F38
@@ -370,12 +364,12 @@ $EndComp
 $Comp
 L +5V #PWR017
 U 1 1 57FACBDB
-P 8600 1650
-F 0 "#PWR017" H 8600 1500 50  0001 C CNN
-F 1 "+5V" H 8600 1790 50  0000 C CNN
-F 2 "" H 8600 1650 50  0000 C CNN
-F 3 "" H 8600 1650 50  0000 C CNN
-	1    8600 1650
+P 8850 1500
+F 0 "#PWR017" H 8850 1350 50  0001 C CNN
+F 1 "+5V" H 8850 1640 50  0000 C CNN
+F 2 "" H 8850 1500 50  0000 C CNN
+F 3 "" H 8850 1500 50  0000 C CNN
+	1    8850 1500
 	1    0    0    -1  
 $EndComp
 Text GLabel 5500 1000 0    60   Input ~ 0
@@ -521,6 +515,8 @@ Wire Wire Line
 Connection ~ 1400 4000
 Wire Wire Line
 	8900 5500 8800 5500
+Wire Wire Line
+	8850 3950 8800 3950
 Wire Wire Line
 	3800 4300 3700 4300
 Wire Wire Line
@@ -679,24 +675,8 @@ Wire Wire Line
 Wire Wire Line
 	7250 950  7300 950 
 Connection ~ 7150 1000
-<<<<<<< HEAD
-Text HLabel 7100 2050 0    60   Input ~ 0
-5V_BUS
-Text HLabel 8000 2050 2    60   Input ~ 0
-5V_BUS
-Wire Wire Line
-	8000 2050 7800 2050
-Wire Wire Line
-	8600 2000 8600 2100
-Wire Wire Line
-	8600 2100 7900 2100
-Wire Wire Line
-	7900 2100 7900 2050
-Connection ~ 7900 2050
-=======
 Wire Wire Line
 	7800 2050 8600 2050
->>>>>>> 4fe7c757d292dbbe3f96a6210116ac8b44c934d3
 $Comp
 L R_Small R7
 U 1 1 57FC426B
@@ -708,11 +688,6 @@ F 3 "" H 8600 1900 50  0000 C CNN
 	1    8600 1900
 	1    0    0    -1  
 $EndComp
-<<<<<<< HEAD
-Wire Wire Line
-	8600 1800 8600 1650
-Wire Wire Line
-=======
 $Comp
 L R_Small R8
 U 1 1 57FC45B8
@@ -730,7 +705,6 @@ Wire Wire Line
 	8850 1500 8850 1800
 Connection ~ 8850 1650
 Wire Wire Line
->>>>>>> 4fe7c757d292dbbe3f96a6210116ac8b44c934d3
 	5500 1000 5800 1000
 Wire Wire Line
 	5800 800  5500 800 
@@ -920,10 +894,6 @@ GPS_TX
 Wire Wire Line
 	4050 6100 4000 6100
 Connection ~ 4000 6150
-<<<<<<< HEAD
-Text HLabel 2150 650  2    60   Input ~ 0
-~GPS_OC
-=======
 Text GLabel 3850 5900 2    60   Input ~ 0
 GPS_EN
 Text GLabel 1000 850  0    60   Input ~ 0
@@ -1039,7 +1009,6 @@ F 3 "" H 4450 5200 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	4450 5600 3700 5600
->>>>>>> 4fe7c757d292dbbe3f96a6210116ac8b44c934d3
 Wire Wire Line
 	4450 5450 4450 5600
 Connection ~ 4450 5500
@@ -1048,50 +1017,5 @@ Wire Wire Line
 Wire Wire Line
 	4450 5500 4550 5500
 Wire Wire Line
-<<<<<<< HEAD
-	3700 5600 3900 5600
-NoConn ~ 2350 2200
-NoConn ~ 3450 2650
-NoConn ~ 3450 2200
-NoConn ~ 1500 4700
-NoConn ~ 3700 4700
-NoConn ~ 3700 4600
-NoConn ~ 3700 4500
-NoConn ~ 3700 4400
-NoConn ~ 3700 4000
-NoConn ~ 3700 6500
-NoConn ~ 3700 6400
-NoConn ~ 3700 6300
-NoConn ~ 3700 5800
-NoConn ~ 3700 5500
-NoConn ~ 3700 5400
-NoConn ~ 3700 5300
-NoConn ~ 3700 5000
-NoConn ~ 3700 4900
-NoConn ~ 3700 6800
-NoConn ~ 3700 6900
-NoConn ~ 7800 3350
-NoConn ~ 7800 3250
-NoConn ~ 7800 3150
-NoConn ~ 7800 3050
-NoConn ~ 7800 2950
-NoConn ~ 7800 2850
-NoConn ~ 7800 2750
-NoConn ~ 7800 2650
-NoConn ~ 7800 2550
-NoConn ~ 7800 2450
-NoConn ~ 7300 3350
-NoConn ~ 7300 3250
-NoConn ~ 7300 3150
-NoConn ~ 7300 3050
-NoConn ~ 7300 2950
-NoConn ~ 7300 2850
-NoConn ~ 7300 2750
-NoConn ~ 7300 2650
-NoConn ~ 7300 2550
-NoConn ~ 7300 2450
-NoConn ~ 7300 2350
-=======
 	4750 6050 4750 5850
->>>>>>> 4fe7c757d292dbbe3f96a6210116ac8b44c934d3
 $EndSCHEMATC
