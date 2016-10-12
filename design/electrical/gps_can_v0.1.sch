@@ -154,10 +154,6 @@ F 3 "" H 9450 4650 50  0000 C CNN
 	1    9450 4650
 	1    0    0    -1  
 $EndComp
-Text HLabel 3650 2550 2    60   Input ~ 0
-GPS_TX
-Text HLabel 4000 6100 2    60   Input ~ 0
-GPS_TX
 $Comp
 L INDUCTOR_SMALL L1
 U 1 1 57F90A73
@@ -199,10 +195,13 @@ F 3 "" H 9650 5000 50  0000 C CNN
 	1    9650 5000
 	1    0    0    -1  
 $EndComp
+<<<<<<< HEAD
 Text HLabel 8800 5500 0    60   Input ~ 0
 CAN2_STBY
 Text HLabel 8850 3950 0    60   Input ~ 0
 CAN1_STBY
+=======
+>>>>>>> 4fe7c757d292dbbe3f96a6210116ac8b44c934d3
 $Comp
 L +5V #PWR08
 U 1 1 57F94F38
@@ -214,27 +213,15 @@ F 3 "" H 1400 3850 50  0000 C CNN
 	1    1400 3850
 	1    0    0    -1  
 $EndComp
-Text HLabel 3800 4100 2    60   Input ~ 0
-CAN1_STBY
-Text HLabel 3800 4300 2    60   Input ~ 0
-CAN2_STBY
-Text HLabel 3800 5100 2    60   Input ~ 0
-TX_CAN
-Text HLabel 3800 5200 2    60   Input ~ 0
-RX_CAN
-Text HLabel 7100 4550 0    60   Input ~ 0
-TX_CAN
-Text HLabel 7100 4900 0    60   Input ~ 0
-RX_CAN
 $Comp
 L TPS2030 U1
 U 1 1 57F97488
-P 1700 1100
-F 0 "U1" H 1550 1500 60  0000 C CNN
-F 1 "TPS2030" H 1700 1400 60  0000 C CNN
-F 2 "Power_Integrations:SO-8" H 1700 850 60  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tps2030-q1.pdf" H 1600 550 60  0001 C CNN
-	1    1700 1100
+P 1450 1000
+F 0 "U1" H 1300 1400 60  0000 C CNN
+F 1 "TPS2030" H 1450 1300 60  0000 C CNN
+F 2 "Power_Integrations:SO-8" H 1450 750 60  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps2030-q1.pdf" H 1350 450 60  0001 C CNN
+	1    1450 1000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -262,29 +249,25 @@ $EndComp
 $Comp
 L GND #PWR010
 U 1 1 57F98066
-P 1700 1350
-F 0 "#PWR010" H 1700 1100 50  0001 C CNN
-F 1 "GND" H 1700 1200 50  0000 C CNN
-F 2 "" H 1700 1350 50  0000 C CNN
-F 3 "" H 1700 1350 50  0000 C CNN
-	1    1700 1350
+P 1450 1250
+F 0 "#PWR010" H 1450 1000 50  0001 C CNN
+F 1 "GND" H 1450 1100 50  0000 C CNN
+F 2 "" H 1450 1250 50  0000 C CNN
+F 3 "" H 1450 1250 50  0000 C CNN
+	1    1450 1250
 	1    0    0    -1  
 $EndComp
 $Comp
 L +5V #PWR011
 U 1 1 57F981D4
-P 1300 1100
-F 0 "#PWR011" H 1300 950 50  0001 C CNN
-F 1 "+5V" H 1300 1240 50  0000 C CNN
-F 2 "" H 1300 1100 50  0000 C CNN
-F 3 "" H 1300 1100 50  0000 C CNN
-	1    1300 1100
+P 1050 1000
+F 0 "#PWR011" H 1050 850 50  0001 C CNN
+F 1 "+5V" H 1050 1140 50  0000 C CNN
+F 2 "" H 1050 1000 50  0000 C CNN
+F 3 "" H 1050 1000 50  0000 C CNN
+	1    1050 1000
 	0    -1   -1   0   
 $EndComp
-Text HLabel 1250 950  0    60   Input ~ 0
-GPS_EN
-Text HLabel 3800 5900 2    60   Input ~ 0
-GPS_EN
 $Comp
 L C_Small C1
 U 1 1 57F992DD
@@ -340,10 +323,6 @@ F 3 "" H 7600 4100 50  0000 C CNN
 	1    7600 4100
 	1    0    0    -1  
 $EndComp
-Text HLabel 3800 4200 2    60   Input ~ 0
-CAN_SEL
-Text HLabel 6350 4650 0    60   Input ~ 0
-CAN_SEL
 $Comp
 L CONN_02X26 H1
 U 1 1 57FAC1AA
@@ -432,12 +411,12 @@ $EndComp
 $Comp
 L +5V #PWR019
 U 1 1 57FAFE6D
-P 4750 5800
-F 0 "#PWR019" H 4750 5650 50  0001 C CNN
-F 1 "+5V" H 4750 5940 50  0000 C CNN
-F 2 "" H 4750 5800 50  0000 C CNN
-F 3 "" H 4750 5800 50  0000 C CNN
-	1    4750 5800
+P 4750 5850
+F 0 "#PWR019" H 4750 5700 50  0001 C CNN
+F 1 "+5V" H 4750 5990 50  0000 C CNN
+F 2 "" H 4750 5850 50  0000 C CNN
+F 3 "" H 4750 5850 50  0000 C CNN
+	1    4750 5850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -480,7 +459,7 @@ Wire Wire Line
 Wire Wire Line
 	1400 2300 1450 2300
 Wire Wire Line
-	1450 2450 1400 2450
+	1150 2450 1450 2450
 Connection ~ 1400 2450
 Wire Wire Line
 	1450 2400 1400 2400
@@ -495,7 +474,6 @@ Wire Wire Line
 Connection ~ 1650 2650
 Wire Wire Line
 	3000 1100 3000 1900
-Connection ~ 2850 1750
 Wire Wire Line
 	10050 4200 10150 4200
 Wire Wire Line
@@ -535,9 +513,9 @@ Wire Wire Line
 	9600 3400 9600 3600
 Connection ~ 9600 3500
 Wire Wire Line
-	1500 4300 1400 4300
+	1400 4300 1500 4300
 Wire Wire Line
-	1400 4300 1400 3850
+	1400 3850 1400 4300
 Wire Wire Line
 	1100 4000 1500 4000
 Connection ~ 1400 4000
@@ -555,26 +533,24 @@ Wire Wire Line
 	1650 2500 1650 2750
 Wire Wire Line
 	2850 1750 2850 1900
-Wire Wire Line
-	2750 1100 3700 1100
 Connection ~ 3000 1750
 Wire Wire Line
 	2450 1400 2450 1450
 Wire Wire Line
-	1700 1350 1700 1300
+	1450 1250 1450 1200
 Wire Wire Line
-	1300 1100 1400 1100
+	1050 1000 1150 1000
 Wire Wire Line
-	1400 950  1250 950 
+	1150 850  1000 850 
 Wire Wire Line
-	3700 5900 3800 5900
+	3700 5900 3850 5900
 Wire Wire Line
 	2800 1450 2800 1350
 Wire Wire Line
 	2800 1150 2800 1100
 Connection ~ 2800 1100
 Wire Wire Line
-	2150 1100 2050 1100
+	1900 1000 1800 1000
 Wire Wire Line
 	7950 4950 8050 4950
 Wire Wire Line
@@ -642,8 +618,6 @@ Wire Wire Line
 Wire Wire Line
 	4850 6050 4750 6050
 Wire Wire Line
-	4750 6050 4750 5800
-Wire Wire Line
 	3850 6250 4850 6250
 Wire Wire Line
 	3700 6700 4550 6700
@@ -705,6 +679,7 @@ Wire Wire Line
 Wire Wire Line
 	7250 950  7300 950 
 Connection ~ 7150 1000
+<<<<<<< HEAD
 Text HLabel 7100 2050 0    60   Input ~ 0
 5V_BUS
 Text HLabel 8000 2050 2    60   Input ~ 0
@@ -718,20 +693,44 @@ Wire Wire Line
 Wire Wire Line
 	7900 2100 7900 2050
 Connection ~ 7900 2050
+=======
+Wire Wire Line
+	7800 2050 8600 2050
+>>>>>>> 4fe7c757d292dbbe3f96a6210116ac8b44c934d3
 $Comp
 L R_Small R7
 U 1 1 57FC426B
 P 8600 1900
 F 0 "R7" H 8630 1920 50  0000 L CNN
-F 1 "DNP" H 8630 1860 50  0000 L CNN
+F 1 "0" H 8630 1860 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 8600 1900 50  0001 C CNN
 F 3 "" H 8600 1900 50  0000 C CNN
 	1    8600 1900
 	1    0    0    -1  
 $EndComp
+<<<<<<< HEAD
 Wire Wire Line
 	8600 1800 8600 1650
 Wire Wire Line
+=======
+$Comp
+L R_Small R8
+U 1 1 57FC45B8
+P 8850 1900
+F 0 "R8" H 8880 1920 50  0000 L CNN
+F 1 "DNP" H 8880 1860 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 8850 1900 50  0001 C CNN
+F 3 "" H 8850 1900 50  0000 C CNN
+	1    8850 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 1800 8600 1650
+Wire Wire Line
+	8850 1500 8850 1800
+Connection ~ 8850 1650
+Wire Wire Line
+>>>>>>> 4fe7c757d292dbbe3f96a6210116ac8b44c934d3
 	5500 1000 5800 1000
 Wire Wire Line
 	5800 800  5500 800 
@@ -782,23 +781,274 @@ Wire Wire Line
 Wire Wire Line
 	3850 6100 3700 6100
 Wire Wire Line
-	3700 6200 4000 6200
-Wire Wire Line
-	4000 6200 4000 6100
+	4000 6200 3700 6200
 Wire Wire Line
 	4850 6150 4000 6150
+Wire Wire Line
+	1800 850  1850 850 
+Wire Wire Line
+	8850 2000 8850 2350
+Wire Wire Line
+	8600 1650 8850 1650
+Wire Wire Line
+	2850 1750 3000 1750
+NoConn ~ 3450 2200
+NoConn ~ 3450 2650
+NoConn ~ 3700 6900
+NoConn ~ 3700 6800
+NoConn ~ 3700 6500
+NoConn ~ 3700 6400
+NoConn ~ 3700 6300
+NoConn ~ 3700 5800
+NoConn ~ 3700 5500
+NoConn ~ 3700 5400
+NoConn ~ 3700 5300
+NoConn ~ 3700 5000
+NoConn ~ 3700 4900
+NoConn ~ 3700 4700
+NoConn ~ 3700 4600
+NoConn ~ 3700 4500
+NoConn ~ 3700 4450
+NoConn ~ 3700 4400
+NoConn ~ 3700 4000
+NoConn ~ 1500 4700
+NoConn ~ 2350 2200
+NoConn ~ 5900 1050
+NoConn ~ 5900 1150
+NoConn ~ 5900 1250
+NoConn ~ 5900 1350
+NoConn ~ 5900 1450
+NoConn ~ 5900 1550
+NoConn ~ 6400 1550
+NoConn ~ 6400 1450
+NoConn ~ 6400 1350
+NoConn ~ 6400 1250
+NoConn ~ 6400 1150
+NoConn ~ 6400 950 
+NoConn ~ 6400 1050
+NoConn ~ 6400 850 
+NoConn ~ 5900 1650
+NoConn ~ 5900 1750
+NoConn ~ 5900 1850
+NoConn ~ 5900 1950
+NoConn ~ 5900 2050
+NoConn ~ 5900 2150
+NoConn ~ 5900 2250
+NoConn ~ 5900 2350
+NoConn ~ 5900 2450
+NoConn ~ 5900 2550
+NoConn ~ 5900 2650
+NoConn ~ 5900 2750
+NoConn ~ 5900 2850
+NoConn ~ 5900 2950
+NoConn ~ 5900 3050
+NoConn ~ 5900 3150
+NoConn ~ 5900 3250
+NoConn ~ 5900 3350
+NoConn ~ 6400 3350
+NoConn ~ 6400 3250
+NoConn ~ 6400 3150
+NoConn ~ 6400 3050
+NoConn ~ 6400 2950
+NoConn ~ 6400 2850
+NoConn ~ 6400 2750
+NoConn ~ 6400 2650
+NoConn ~ 6400 2550
+NoConn ~ 6400 2450
+NoConn ~ 6400 2350
+NoConn ~ 6400 2250
+NoConn ~ 6400 2150
+NoConn ~ 6400 2050
+NoConn ~ 6400 1950
+NoConn ~ 6400 1850
+NoConn ~ 6400 1750
+NoConn ~ 6400 1650
+NoConn ~ 7800 850 
+NoConn ~ 7300 1050
+NoConn ~ 7300 1150
+NoConn ~ 7300 1250
+NoConn ~ 7300 1350
+NoConn ~ 7300 1450
+NoConn ~ 7800 1450
+NoConn ~ 7800 1350
+NoConn ~ 7800 1250
+NoConn ~ 7800 1150
+NoConn ~ 7800 1050
+NoConn ~ 7800 950 
+NoConn ~ 7300 1550
+NoConn ~ 7300 1650
+NoConn ~ 7300 1750
+NoConn ~ 7300 1850
+NoConn ~ 7300 1950
+NoConn ~ 7300 2150
+NoConn ~ 7800 2150
+NoConn ~ 7800 1950
+NoConn ~ 7800 1850
+NoConn ~ 7800 1750
+NoConn ~ 7800 1650
+NoConn ~ 7800 1550
+NoConn ~ 7300 2350
+NoConn ~ 7300 2550
+NoConn ~ 7300 2450
+NoConn ~ 7300 2650
+NoConn ~ 7300 2750
+NoConn ~ 7300 2850
+NoConn ~ 7300 3050
+NoConn ~ 7300 2950
+NoConn ~ 7300 3150
+NoConn ~ 7850 3150
+NoConn ~ 7800 2450
+NoConn ~ 7800 2550
+NoConn ~ 7800 2650
+NoConn ~ 7800 2750
+NoConn ~ 7800 2950
+NoConn ~ 7800 2850
+NoConn ~ 7800 3050
+NoConn ~ 7800 3150
+NoConn ~ 7800 3250
+NoConn ~ 7800 3350
+NoConn ~ 7300 3350
+NoConn ~ 7300 3250
+Wire Wire Line
+	8600 2050 8600 2000
+Wire Wire Line
+	4000 6100 4000 6200
+Text GLabel 3650 2550 2    60   Input ~ 0
+GPS_TX
+Text GLabel 4050 6100 2    60   Input ~ 0
+GPS_TX
+Wire Wire Line
+	4050 6100 4000 6100
 Connection ~ 4000 6150
+<<<<<<< HEAD
 Text HLabel 2150 650  2    60   Input ~ 0
 ~GPS_OC
-Wire Wire Line
-	2050 950  2100 950 
-Wire Wire Line
-	2100 950  2100 650 
-Wire Wire Line
-	2100 650  2150 650 
-Text HLabel 3900 5600 2    60   Input ~ 0
+=======
+Text GLabel 3850 5900 2    60   Input ~ 0
+GPS_EN
+Text GLabel 1000 850  0    60   Input ~ 0
+GPS_EN
+Text GLabel 3800 5100 2    60   Input ~ 0
+TX_CAN
+Text GLabel 3800 5200 2    60   Input ~ 0
+RX_CAN
+Text GLabel 3800 4100 2    59   Input ~ 0
+CAN1_STBY
+Text GLabel 3800 4200 2    59   Input ~ 0
+CAN_SEL
+Text GLabel 3800 4300 2    59   Input ~ 0
+CAN2_STBY
+Text GLabel 6350 4650 0    59   Input ~ 0
+CAN_SEL
+Text GLabel 7100 4550 0    60   Input ~ 0
+TX_CAN
+Text GLabel 7100 4900 0    60   Input ~ 0
+RX_CAN
+Text GLabel 8800 3950 0    59   Input ~ 0
+CAN1_STBY
+Text GLabel 8800 5500 0    59   Input ~ 0
+CAN2_STBY
+Text GLabel 2050 700  2    59   Input ~ 0
 ~GPS_OC
 Wire Wire Line
+	1900 1000 1900 1100
+Wire Wire Line
+	1900 1100 2150 1100
+Wire Wire Line
+	1850 850  1850 700 
+Wire Wire Line
+	1850 700  2050 700 
+Text GLabel 4550 5500 2    59   Input ~ 0
+~GPS_OC
+Wire Wire Line
+	2750 1100 3700 1100
+$Comp
+L PWR_FLAG #FLG022
+U 1 1 57FF0DED
+P 8050 2050
+F 0 "#FLG022" H 8050 2145 50  0001 C CNN
+F 1 "PWR_FLAG" H 8050 2230 50  0000 C CNN
+F 2 "" H 8050 2050 50  0000 C CNN
+F 3 "" H 8050 2050 50  0000 C CNN
+	1    8050 2050
+	1    0    0    -1  
+$EndComp
+Text GLabel 7100 2050 0    59   Input ~ 0
+5V_BUS
+Text GLabel 8100 2150 2    59   Input ~ 0
+5V_BUS
+Wire Wire Line
+	8050 2050 8050 2150
+Connection ~ 8050 2050
+$Comp
+L GNDPWR #PWR023
+U 1 1 57FF1AD4
+P 1150 2550
+F 0 "#PWR023" H 1150 2350 50  0001 C CNN
+F 1 "GNDPWR" H 1150 2420 50  0000 C CNN
+F 2 "" H 1150 2500 50  0000 C CNN
+F 3 "" H 1150 2500 50  0000 C CNN
+	1    1150 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 2450 1150 2550
+Wire Wire Line
+	8050 2150 8100 2150
+Text GLabel 8750 2350 0    59   Input ~ 0
+ALT_5V
+Wire Wire Line
+	8850 2350 8750 2350
+$Comp
+L PWR_FLAG #FLG024
+U 1 1 57FF5CAF
+P 8600 1650
+F 0 "#FLG024" H 8600 1745 50  0001 C CNN
+F 1 "PWR_FLAG" H 8600 1830 50  0000 C CNN
+F 2 "" H 8600 1650 50  0000 C CNN
+F 3 "" H 8600 1650 50  0000 C CNN
+	1    8600 1650
+	1    0    0    -1  
+$EndComp
+Text GLabel 8100 1100 2    59   Input ~ 0
+ALT_5V
+Wire Wire Line
+	8000 1100 8100 1100
+NoConn ~ 8000 1100
+$Comp
+L R_Small R1
+U 1 1 57FF82DA
+P 4450 5350
+F 0 "R1" H 4480 5370 50  0000 L CNN
+F 1 "10k" H 4480 5310 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 4450 5350 50  0001 C CNN
+F 3 "" H 4450 5350 50  0000 C CNN
+	1    4450 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR025
+U 1 1 57FF89E7
+P 4450 5200
+F 0 "#PWR025" H 4450 5050 50  0001 C CNN
+F 1 "+5V" H 4450 5340 50  0000 C CNN
+F 2 "" H 4450 5200 50  0000 C CNN
+F 3 "" H 4450 5200 50  0000 C CNN
+	1    4450 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 5600 3700 5600
+>>>>>>> 4fe7c757d292dbbe3f96a6210116ac8b44c934d3
+Wire Wire Line
+	4450 5450 4450 5600
+Connection ~ 4450 5500
+Wire Wire Line
+	4450 5200 4450 5250
+Wire Wire Line
+	4450 5500 4550 5500
+Wire Wire Line
+<<<<<<< HEAD
 	3700 5600 3900 5600
 NoConn ~ 2350 2200
 NoConn ~ 3450 2650
@@ -841,4 +1091,7 @@ NoConn ~ 7300 2650
 NoConn ~ 7300 2550
 NoConn ~ 7300 2450
 NoConn ~ 7300 2350
+=======
+	4750 6050 4750 5850
+>>>>>>> 4fe7c757d292dbbe3f96a6210116ac8b44c934d3
 $EndSCHEMATC
