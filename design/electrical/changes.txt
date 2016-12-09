@@ -1,0 +1,21 @@
+08/12/2016
+	- Changed C1-5 footprints from 0804 to 0603
+	- Changed L1's footprint to 0603
+	- IC1 (atmega) and U4 (mux) now powered at 3V3
+	- U5 and U6 (transceivers) now use 3.3V as voltage reference
+	- C3 assigned to 3V3
+	- Added led on PB0 (blinky)
+	- Added led on 5V and 3V3
+	- Changed /GPS_OC pull-up voltage to 3V3
+	- Changed Programming connector voltage to 3V3
+	- Added debug port P2 for UART. Please check pinout!
+	- Updated SMA connector GND to Passive to remove ERC error.
+	- Updated CAN transceiver GND to Passive to remove ERC error.
+	- Updated LDO regulator VOUT pin4 to Passive to remove ERC error.
+	- Added thermal relief for the 2 voltage regulators
+	
+	
+TODO:
+	- Update connectors footprint
+	- ATTENTION: CAN traces are not perfectly equal..
+	- ATTENTION: could prove difficult to connect the gps antenna, in the middle of the board..
